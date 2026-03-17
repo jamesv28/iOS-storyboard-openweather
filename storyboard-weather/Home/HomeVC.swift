@@ -1,0 +1,58 @@
+import UIKit
+
+class HomeVC: UIViewController {
+
+    @IBOutlet private weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setUpTable()
+    }
+
+    private func setUpTable() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    // api key - 4da07b58ab36c26bd870b2de6ef6fe20
+    
+}
+
+extension HomeVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 0:
+            return 125
+        case 1:
+            return 100
+        default:
+            return 0
+        }
+    }
+}
+
+extension HomeVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let row = indexPath.row
+        switch row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableTopRow.id, for: indexPath) as! HomeTableTopRow
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableCarousel.id, for: indexPath) as! HomeTableCarousel
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: HomeWeeklyForecastRow.id, for: indexPath) as! HomeWeeklyForecastRow
+            return cell
+        default:
+            return UITableViewCell()
+        }
+        
+    }
+    
+    
+}

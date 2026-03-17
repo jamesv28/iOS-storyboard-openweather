@@ -6,30 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AA848A962F69C50600645C64 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848A8B2F69C50600645C64 /* HomeVC.swift */; };
+		AA848A972F69C50600645C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848A8F2F69C50600645C64 /* AppDelegate.swift */; };
+		AA848A982F69C50600645C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848A942F69C50600645C64 /* SceneDelegate.swift */; };
+		AA848A992F69C50600645C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA848A8D2F69C50600645C64 /* Main.storyboard */; };
+		AA848A9A2F69C50600645C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA848A902F69C50600645C64 /* Assets.xcassets */; };
+		AA848A9C2F69C50600645C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA848A932F69C50600645C64 /* LaunchScreen.storyboard */; };
+		AA848A9E2F69C55A00645C64 /* HomeTableTopRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848A9D2F69C55A00645C64 /* HomeTableTopRow.swift */; };
+		AA848AA02F69C58900645C64 /* HomeTableCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848A9F2F69C58900645C64 /* HomeTableCarousel.swift */; };
+		AA848AA22F69C5AF00645C64 /* HomeWeeklyForecastRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AA848A722F677B8200645C64 /* storyboard-weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "storyboard-weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA848A8B2F69C50600645C64 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		AA848A8C2F69C50600645C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA848A8F2F69C50600645C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA848A902F69C50600645C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA848A912F69C50600645C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA848A922F69C50600645C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA848A942F69C50600645C64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA848A9D2F69C55A00645C64 /* HomeTableTopRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableTopRow.swift; sourceTree = "<group>"; };
+		AA848A9F2F69C58900645C64 /* HomeTableCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCarousel.swift; sourceTree = "<group>"; };
+		AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeeklyForecastRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		AA848A842F677B8300645C64 /* Exceptions for "storyboard-weather" folder in "storyboard-weather" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = AA848A712F677B8200645C64 /* storyboard-weather */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		AA848A742F677B8200645C64 /* storyboard-weather */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				AA848A842F677B8300645C64 /* Exceptions for "storyboard-weather" folder in "storyboard-weather" target */,
-			);
-			path = "storyboard-weather";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AA848A6F2F677B8200645C64 /* Frameworks */ = {
@@ -45,7 +46,7 @@
 		AA848A692F677B8200645C64 = {
 			isa = PBXGroup;
 			children = (
-				AA848A742F677B8200645C64 /* storyboard-weather */,
+				AA848A952F69C50600645C64 /* storyboard-weather */,
 				AA848A732F677B8200645C64 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +57,31 @@
 				AA848A722F677B8200645C64 /* storyboard-weather.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AA848A8E2F69C50600645C64 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AA848A8B2F69C50600645C64 /* HomeVC.swift */,
+				AA848A8D2F69C50600645C64 /* Main.storyboard */,
+				AA848A9D2F69C55A00645C64 /* HomeTableTopRow.swift */,
+				AA848A9F2F69C58900645C64 /* HomeTableCarousel.swift */,
+				AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AA848A952F69C50600645C64 /* storyboard-weather */ = {
+			isa = PBXGroup;
+			children = (
+				AA848A8F2F69C50600645C64 /* AppDelegate.swift */,
+				AA848A902F69C50600645C64 /* Assets.xcassets */,
+				AA848A912F69C50600645C64 /* Info.plist */,
+				AA848A932F69C50600645C64 /* LaunchScreen.storyboard */,
+				AA848A942F69C50600645C64 /* SceneDelegate.swift */,
+				AA848A8E2F69C50600645C64 /* Home */,
+			);
+			path = "storyboard-weather";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +98,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				AA848A742F677B8200645C64 /* storyboard-weather */,
 			);
 			name = "storyboard-weather";
 			packageProductDependencies = (
@@ -122,6 +145,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA848A992F69C50600645C64 /* Main.storyboard in Resources */,
+				AA848A9A2F69C50600645C64 /* Assets.xcassets in Resources */,
+				AA848A9C2F69C50600645C64 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +158,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA848A9E2F69C55A00645C64 /* HomeTableTopRow.swift in Sources */,
+				AA848AA02F69C58900645C64 /* HomeTableCarousel.swift in Sources */,
+				AA848A962F69C50600645C64 /* HomeVC.swift in Sources */,
+				AA848AA22F69C5AF00645C64 /* HomeWeeklyForecastRow.swift in Sources */,
+				AA848A972F69C50600645C64 /* AppDelegate.swift in Sources */,
+				AA848A982F69C50600645C64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA848A8D2F69C50600645C64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA848A8C2F69C50600645C64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA848A932F69C50600645C64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA848A922F69C50600645C64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AA848A862F677B8300645C64 /* Debug */ = {
