@@ -16,6 +16,7 @@
 		AA848A9E2F69C55A00645C64 /* HomeTableTopRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848A9D2F69C55A00645C64 /* HomeTableTopRow.swift */; };
 		AA848AA02F69C58900645C64 /* HomeTableCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848A9F2F69C58900645C64 /* HomeTableCarousel.swift */; };
 		AA848AA22F69C5AF00645C64 /* HomeWeeklyForecastRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */; };
+		AA9444202F6CC1A800FED36C /* DailyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA94441F2F6CC1A800FED36C /* DailyCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AA848A9D2F69C55A00645C64 /* HomeTableTopRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableTopRow.swift; sourceTree = "<group>"; };
 		AA848A9F2F69C58900645C64 /* HomeTableCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCarousel.swift; sourceTree = "<group>"; };
 		AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeeklyForecastRow.swift; sourceTree = "<group>"; };
+		AA94441F2F6CC1A800FED36C /* DailyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +64,11 @@
 		AA848A8E2F69C50600645C64 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				AA9444222F6CD11300FED36C /* TopRow */,
+				AA9444212F6CD09900FED36C /* CollectionView Row */,
+				AA9444232F6CD2A000FED36C /* BottomRow */,
 				AA848A8B2F69C50600645C64 /* HomeVC.swift */,
 				AA848A8D2F69C50600645C64 /* Main.storyboard */,
-				AA848A9D2F69C55A00645C64 /* HomeTableTopRow.swift */,
-				AA848A9F2F69C58900645C64 /* HomeTableCarousel.swift */,
-				AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -82,6 +84,31 @@
 				AA848A8E2F69C50600645C64 /* Home */,
 			);
 			path = "storyboard-weather";
+			sourceTree = "<group>";
+		};
+		AA9444212F6CD09900FED36C /* CollectionView Row */ = {
+			isa = PBXGroup;
+			children = (
+				AA848A9F2F69C58900645C64 /* HomeTableCarousel.swift */,
+				AA94441F2F6CC1A800FED36C /* DailyCollectionCell.swift */,
+			);
+			path = "CollectionView Row";
+			sourceTree = "<group>";
+		};
+		AA9444222F6CD11300FED36C /* TopRow */ = {
+			isa = PBXGroup;
+			children = (
+				AA848A9D2F69C55A00645C64 /* HomeTableTopRow.swift */,
+			);
+			path = TopRow;
+			sourceTree = "<group>";
+		};
+		AA9444232F6CD2A000FED36C /* BottomRow */ = {
+			isa = PBXGroup;
+			children = (
+				AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */,
+			);
+			path = BottomRow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +187,7 @@
 			files = (
 				AA848A9E2F69C55A00645C64 /* HomeTableTopRow.swift in Sources */,
 				AA848AA02F69C58900645C64 /* HomeTableCarousel.swift in Sources */,
+				AA9444202F6CC1A800FED36C /* DailyCollectionCell.swift in Sources */,
 				AA848A962F69C50600645C64 /* HomeVC.swift in Sources */,
 				AA848AA22F69C5AF00645C64 /* HomeWeeklyForecastRow.swift in Sources */,
 				AA848A972F69C50600645C64 /* AppDelegate.swift in Sources */,
