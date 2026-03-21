@@ -17,6 +17,7 @@
 		AA848AA02F69C58900645C64 /* HomeTableCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848A9F2F69C58900645C64 /* HomeTableCarousel.swift */; };
 		AA848AA22F69C5AF00645C64 /* HomeWeeklyForecastRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */; };
 		AA9444202F6CC1A800FED36C /* DailyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA94441F2F6CC1A800FED36C /* DailyCollectionCell.swift */; };
+		AAB1E17F2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1E17E2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AA848A9F2F69C58900645C64 /* HomeTableCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCarousel.swift; sourceTree = "<group>"; };
 		AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeeklyForecastRow.swift; sourceTree = "<group>"; };
 		AA94441F2F6CC1A800FED36C /* DailyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCollectionCell.swift; sourceTree = "<group>"; };
+		AAB1E17E2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyForecastDetailRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */,
+				AAB1E17E2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift */,
 			);
 			path = BottomRow;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				AA848A9E2F69C55A00645C64 /* HomeTableTopRow.swift in Sources */,
 				AA848AA02F69C58900645C64 /* HomeTableCarousel.swift in Sources */,
 				AA9444202F6CC1A800FED36C /* DailyCollectionCell.swift in Sources */,
+				AAB1E17F2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift in Sources */,
 				AA848A962F69C50600645C64 /* HomeVC.swift in Sources */,
 				AA848AA22F69C5AF00645C64 /* HomeWeeklyForecastRow.swift in Sources */,
 				AA848A972F69C50600645C64 /* AppDelegate.swift in Sources */,
