@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": 104.99,
+    "lat": 39.74
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 39.04,
+    "feels_like": 33.28,
+    "temp_min": 39.04,
+    "temp_max": 39.04,
+    "pressure": 1016,
+    "humidity": 30,
+    "sea_level": 1016,
+    "grnd_level": 859
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 8.28,
+    "deg": 250,
+    "gust": 8.12
+  },
+  "clouds": {
+    "all": 1
+  },
+  "dt": 1774305927,
+  "sys": {
+    "country": "CN",
+    "sunrise": 1774306670,
+    "sunset": 1774350897
+  },
+  "timezone": 28800,
+  "id": 1816821,
+  "name": "Bayan Hot",
+  "cod": 200
+}
