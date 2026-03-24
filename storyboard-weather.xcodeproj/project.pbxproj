@@ -18,6 +18,8 @@
 		AA848AA22F69C5AF00645C64 /* HomeWeeklyForecastRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */; };
 		AA9444202F6CC1A800FED36C /* DailyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA94441F2F6CC1A800FED36C /* DailyCollectionCell.swift */; };
 		AA9BBF212F71FBB100E1A789 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9BBF202F71FBB100E1A789 /* CurrentWeather.swift */; };
+		AA9BBF232F720AC600E1A789 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9BBF222F720AC600E1A789 /* Api.swift */; };
+		AA9BBF252F720D6D00E1A789 /* CurrentWeather.json in Resources */ = {isa = PBXBuildFile; fileRef = AA9BBF242F720D6100E1A789 /* CurrentWeather.json */; };
 		AAB1E17F2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1E17E2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		AA848AA12F69C5AF00645C64 /* HomeWeeklyForecastRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeeklyForecastRow.swift; sourceTree = "<group>"; };
 		AA94441F2F6CC1A800FED36C /* DailyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCollectionCell.swift; sourceTree = "<group>"; };
 		AA9BBF202F71FBB100E1A789 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		AA9BBF222F720AC600E1A789 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		AA9BBF242F720D6100E1A789 /* CurrentWeather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CurrentWeather.json; sourceTree = "<group>"; };
 		AAB1E17E2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyForecastDetailRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,7 @@
 				AA848A8E2F69C50600645C64 /* Home */,
 				AAFC92022F71F81100F9737C /* SampleJson */,
 				AA9BBF1F2F71FB6900E1A789 /* models */,
+				AA9BBF222F720AC600E1A789 /* Api.swift */,
 			);
 			path = "storyboard-weather";
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		AAFC92022F71F81100F9737C /* SampleJson */ = {
 			isa = PBXGroup;
 			children = (
+				AA9BBF242F720D6100E1A789 /* CurrentWeather.json */,
 			);
 			path = SampleJson;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 			files = (
 				AA848A992F69C50600645C64 /* Main.storyboard in Resources */,
 				AA848A9A2F69C50600645C64 /* Assets.xcassets in Resources */,
+				AA9BBF252F720D6D00E1A789 /* CurrentWeather.json in Resources */,
 				AA848A9C2F69C50600645C64 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +222,7 @@
 				AA848A962F69C50600645C64 /* HomeVC.swift in Sources */,
 				AA848AA22F69C5AF00645C64 /* HomeWeeklyForecastRow.swift in Sources */,
 				AA848A972F69C50600645C64 /* AppDelegate.swift in Sources */,
+				AA9BBF232F720AC600E1A789 /* Api.swift in Sources */,
 				AA848A982F69C50600645C64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

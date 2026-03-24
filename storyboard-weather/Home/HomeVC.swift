@@ -7,6 +7,11 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTable()
+        Api.shared.fetchCurrentWeather { weather in
+            guard let weather else { return }
+            print("We receive data here")
+            // update table view here
+        }
     }
 
     private func setUpTable() {
@@ -22,13 +27,16 @@ class HomeVC: UIViewController {
     
 }
 
+// this is for controlling the height of the three different table view cells
 extension HomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
-            return 125
+            return 250
         case 1:
-            return 100
+            return 160
+        case 2:
+            return 330
         default:
             return 0
         }
