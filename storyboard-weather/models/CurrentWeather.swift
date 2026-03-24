@@ -25,13 +25,13 @@ struct CurrentWeather: Decodable {
 }
 
 struct Coordinates: Decodable {
-    let long: Double
+    let lon: Double
     let lat: Double
 }
 
 struct CurrentWeatherWeather: Decodable {
     let id: Int
-    let name: String
+    let main: String
     let description: String
     let icon: String
 }
@@ -55,8 +55,8 @@ struct CurrentWeatherClouds: Decodable {
 }
 
 struct CurrentWeatherSystem: Decodable {
-    let type: Int
-    let id: Int
+//    let type: Int
+//    let id: Int
     let country: String
     let sunrise: Int
     let sunset: Int
