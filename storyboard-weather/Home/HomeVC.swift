@@ -26,10 +26,7 @@ class HomeVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
-    
-    // api key - 4da07b58ab36c26bd870b2de6ef6fe20
-    // 5-day forecast: api.openweathermap.org/data/2.5/forecast?lat=39.74&lon=104.99&appid=4da07b58ab36c26bd870b2de6ef6fe20&units=imperial
-    
+        
 }
 
 // this is for controlling the height of the three different table view cells
