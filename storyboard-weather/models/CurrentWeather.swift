@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct CurrentWeather: Decodable {
+nonisolated struct CurrentWeather: Decodable {
     let coord: Coordinates
     let weather: [CurrentWeatherWeather]
     let base: String
