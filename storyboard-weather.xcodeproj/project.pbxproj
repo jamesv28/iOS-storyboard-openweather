@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA38334B2F74DF4900827C6A /* WeeklyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA38334A2F74DF4900827C6A /* WeeklyForecast.swift */; };
+		AA38334F2F74E63100827C6A /* WeeklyForecast.json in Resources */ = {isa = PBXBuildFile; fileRef = AA38334E2F74E62200827C6A /* WeeklyForecast.json */; };
 		AA848A962F69C50600645C64 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848A8B2F69C50600645C64 /* HomeVC.swift */; };
 		AA848A972F69C50600645C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848A8F2F69C50600645C64 /* AppDelegate.swift */; };
 		AA848A982F69C50600645C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA848A942F69C50600645C64 /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		AA38334A2F74DF4900827C6A /* WeeklyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyForecast.swift; sourceTree = "<group>"; };
+		AA38334E2F74E62200827C6A /* WeeklyForecast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WeeklyForecast.json; sourceTree = "<group>"; };
 		AA848A722F677B8200645C64 /* storyboard-weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "storyboard-weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA848A8B2F69C50600645C64 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		AA848A8C2F69C50600645C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		AAFC92022F71F81100F9737C /* SampleJson */ = {
 			isa = PBXGroup;
 			children = (
+				AA38334E2F74E62200827C6A /* WeeklyForecast.json */,
 				AA9BBF242F720D6100E1A789 /* CurrentWeather.json */,
 			);
 			path = SampleJson;
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA848A992F69C50600645C64 /* Main.storyboard in Resources */,
+				AA38334F2F74E63100827C6A /* WeeklyForecast.json in Resources */,
 				AA848A9A2F69C50600645C64 /* Assets.xcassets in Resources */,
 				AA9BBF252F720D6D00E1A789 /* CurrentWeather.json in Resources */,
 				AA848A9C2F69C50600645C64 /* LaunchScreen.storyboard in Resources */,
