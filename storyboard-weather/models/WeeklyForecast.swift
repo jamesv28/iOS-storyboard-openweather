@@ -1,77 +1,77 @@
 //
 //  WeeklyForecast.swift
-//  storyboard-weather
+//  Storyboard Weather
 //
-//  Created by James Volmert on 3/25/26.
+//  Created by James Volmert
 //
 
 import Foundation
 
 struct WeeklyForecast: Decodable {
     let cod: String
-    let message: String
-    let cnt: Int
+    let message: Int
+    let cnt: Int // list.count
     let list: [WeeklyForecastList]?
     let city: WeeklyForecastCity?
 }
 
 struct WeeklyForecastList: Decodable {
-    let dt: Int
-    let main: WeeklyForecastMain
-    let weather: [WeeklyForecastWeather]
-    let clouds: WeeklyForecastClouds
-    let wind: WeeklyForecastWind
-    let Visibility: Int
-    let pop: Double
-    let sys: WeeklyForecastSys
-    let dt_text: String
+    let dt: Int?
+    let main: WeeklyForecastListMain?
+    let weather: [WeeklyForecastListWeather]?
+    let clouds: WeeklyForecastListClouds?
+    let wind: WeeklyForecastListWind?
+    let visibility: Int?
+    let pop: Double?
+    let dt_txt: String?
 }
 
-struct WeeklyForecastMain: Decodable {
-    let temp: Double
-    let feels_like: Double
-    let temp_min: Double
-    let temp_max: Double
-    let pressure: Int
-    let sea_level: Int
-    let grnd_level: Int
-    let humidity: Int
-    let temp_kf: Double
+struct WeeklyForecastListMain: Decodable {
+    let temp: Double?
+    let feelsLike: Double?
+    let tempMin: Double?
+    let tempMax: Double?
+    let pressure: Int?
+    let seaLevel: Int?
+    let groundLevel: Int?
+    let humidity: Int?
+    let tempKf: Double?
+    
+    enum CodingKeys: String, CodingKey {
+        case temp, pressure, humidity
+        case feelsLike = "feels_like"
+        case tempMin = "temp_min"
+        case tempMax = "temp_max"
+        case seaLevel = "sea_level"
+        case groundLevel = "grnd_level"
+        case tempKf = "temp_kf"
+    }
 }
 
-struct WeeklyForecastWeather: Decodable {
-    let id: Int
-    let main: String
-    let description: String
-    let icon: String
+struct WeeklyForecastListWeather: Decodable {
+    let id: Int?
+    let main: String?
+    let description: String?
+    let icon: String?
 }
 
-struct WeeklyForecastCity: Decodable {
-    let id: Int
-    let name: String
-    let coord: WeeklyForecastCoord
-    let country: String
-    let population: Int
-    let timezone: String
-    let sunrise: Int
-    let sunset: Int
+struct WeeklyForecastListClouds: Decodable {
+    let all: Int?
 }
 
-struct WeeklyForecastCoord: Decodable {
-    let lat: Double
-    let lon: Double
-}
-
-struct WeeklyForecastClouds: Decodable {
-    let all: Int
-}
-
-struct WeeklyForecastWind: Decodable {
-    let speed: Double
-    let deg: Int
+struct WeeklyForecastListWind: Decodable {
+    let speed: Double?
+    let deg: Int?
     let gust: Double?
 }
 
-struct WeeklyForecastSys: Decodable {
-    let pod: String
+struct WeeklyForecastCity: Decodable {
+    let id: Int?
+    let name: String?
+    let coord: Coordinates?
+    let country: String?
+    let population: Int?
+    let timezone: Int?
+    let sunrise: Int?
+    let sunset: Int?
 }
