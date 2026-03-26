@@ -8,9 +8,11 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTable()
+        
         Api.shared.fetchCurrentWeatherLive { weather in
             guard let weather else { return }
             print("We receive data here")
+            
             // dispatch queue puts the below code on the main thread
             // update table view here
             DispatchQueue.main.async {
@@ -18,6 +20,12 @@ class HomeVC: UIViewController {
                 self.tableView.reloadData()
             }
             
+        }
+        
+        
+        Api.shared.getSample(WeeklyForecast.self) { forecast in
+            guard let forecast else {return }
+            dump("forecast \(forecast)")
         }
         
     }

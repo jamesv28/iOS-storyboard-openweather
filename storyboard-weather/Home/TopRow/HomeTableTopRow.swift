@@ -32,7 +32,9 @@ class HomeTableTopRow: UITableViewCell {
         guard let weather else { return }
         tempLabel.text = "\(weather.main.temp)"
         locationLabel.text = "\(weather.name)"
-        print("Location: \(String(describing: locationLabel.text))")
+        
+//        print("Location: \(String(describing: locationLabel.text))")
+        
         descriptionLabel.text = weather.weather.first?.description
         let min = weather.main.temp_min
         let max = weather.main.temp_max
