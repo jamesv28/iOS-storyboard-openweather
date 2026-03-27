@@ -15,9 +15,11 @@ class HomeVC: UIViewController {
             
             // dispatch queue puts the below code on the main thread
             // update table view here
-            DispatchQueue.main.async {
-                self.currentWweather = weather
-                self.tableView.reloadData()
+            
+            // weak tells to deallocate its reference as soon as appropriate 
+            DispatchQueue.main.async { [weak self] in
+                self?.currentWweather = weather
+                self?.tableView.reloadData()
             }
             
         }
