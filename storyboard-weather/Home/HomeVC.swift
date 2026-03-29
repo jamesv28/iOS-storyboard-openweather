@@ -3,6 +3,7 @@ import UIKit
 class HomeVC: UIViewController {
 
     private var currentWweather: CurrentWeather?
+    private var weeklyForecast: WeeklyForecast?
     @IBOutlet private weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -16,7 +17,7 @@ class HomeVC: UIViewController {
             // dispatch queue puts the below code on the main thread
             // update table view here
             
-            // weak tells to deallocate its reference as soon as appropriate 
+            // weak tells to deallocate its reference as soon as appropriate
             DispatchQueue.main.async { [weak self] in
                 self?.currentWweather = weather
                 self?.tableView.reloadData()
@@ -27,7 +28,12 @@ class HomeVC: UIViewController {
         
         Api.shared.getSample(WeeklyForecast.self) { forecast in
             guard let forecast else {return }
-            dump("forecast \(forecast)")
+            DispatchQueue.main.async { [weak self] in
+                guard let self else {return}
+                self.weeklyForecast = forecast
+                self.tableView.reloadData()
+            }
+//            dump("forecast \(forecast)")
         }
         
     }
@@ -69,6 +75,7 @@ extension HomeVC: UITableViewDataSource {
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableCarousel.id, for: indexPath) as! HomeTableCarousel
+            cell.configure(weeklyForecast)
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: HomeWeeklyForecastRow.id, for: indexPath) as! HomeWeeklyForecastRow

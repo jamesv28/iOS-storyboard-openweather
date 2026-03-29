@@ -12,9 +12,10 @@ class DailyCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak private var img: UIImageView!
     @IBOutlet weak private var timeLabel: UILabel!
-    @IBOutlet weak private var tempLabel: NSLayoutConstraint!
-    func configure() {
-        
+    @IBOutlet weak var tempLabel: UILabel!
+    func configure(_ forecast: WeeklyForecastList) {
+        timeLabel.text = forecast.dt_txt
+        tempLabel.text = "\(forecast.main?.temp ?? 0)°"
     }
     
 }
