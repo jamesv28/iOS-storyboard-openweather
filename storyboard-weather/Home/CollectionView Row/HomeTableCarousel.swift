@@ -10,7 +10,7 @@ import UIKit
 class HomeTableCarousel: UITableViewCell {
 
     static let id = "HomeTableCarousel"
-    private var forecast: WeeklyForecast?
+    private var list: [WeeklyForecastList] = []
     
     @IBOutlet private weak var tableView: UICollectionView!
     
@@ -31,26 +31,22 @@ class HomeTableCarousel: UITableViewCell {
     }
     
     func configure(_ forecast: WeeklyForecast?) {
-        guard let forecast else {return}
-        self.forecast = forecast
+        guard let list = forecast?.list  else {return}
+        self.list = list
         tableView.reloadData()
     }
 }
 
 extension HomeTableCarousel: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return list.count > 8 ? 8 : list.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = tableView.dequeueReusableCell(withReuseIdentifier: DailyCollectionCell.id, for: indexPath) as! DailyCollectionCell
-        if let list = forecast?.list {
-            let item = list[indexPath.row]
-            cell.configure(item)
-        }
-        
-        
-        
+        let item = list[indexPath.row]
+        cell.configure(item)
+
         return cell
     }
     
