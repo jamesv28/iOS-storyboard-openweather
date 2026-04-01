@@ -46,7 +46,6 @@ extension HomeTableCarousel: UICollectionViewDataSource {
         let cell = tableView.dequeueReusableCell(withReuseIdentifier: DailyCollectionCell.id, for: indexPath) as! DailyCollectionCell
         let item = list[indexPath.row]
         cell.configure(item)
-
         return cell
     }
     
