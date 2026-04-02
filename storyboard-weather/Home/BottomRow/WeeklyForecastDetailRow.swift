@@ -20,22 +20,36 @@ class WeeklyForecastDetailRow: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
     }
     
     func configure(_ forecast: DailyForecast) {
         dayLabel.text = forecast.day
+        
         let low = forecast.lows.average()
         let high = forecast.highs.average()
-        lowLabel.text = "\(low)"
-        highLabel.text = "\(high)"
+        
+        let lowInt = Int(low)
+        let highInt = Int(high)
+        
+        lowLabel.text = "\(lowInt)°"
+        highLabel.text = "\(highInt)°"
+        
         slider.minimumValue = Float(low)
         slider.maximumValue = Float(high)
         let average = forecast.avg
         slider.value = Float(average)
+        
+        if let description = forecast.description {
+            let weather = WeatherType(description)
+            img.image = weather.icon
+        } else {
+            img.image = nil
+        }
     }
+    
     
 }

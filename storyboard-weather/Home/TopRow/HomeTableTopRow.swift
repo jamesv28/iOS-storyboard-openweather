@@ -32,13 +32,18 @@ class HomeTableTopRow: UITableViewCell {
         guard let weather else { return }
         tempLabel.text = "\(weather.main.temp)"
         locationLabel.text = "\(weather.name)"
-        
-//        print("Location: \(String(describing: locationLabel.text))")
-        
+                
         descriptionLabel.text = weather.weather.first?.description
         let min = weather.main.temp_min
         let max = weather.main.temp_max
         highLowLabel.text = "H:\(max)° | L:\(min)°"
+        
+        if let description = weather.weather.first?.description {
+            let weather = WeatherType(description)
+            img.image = weather.icon
+        } else {
+            img.image = nil
+        }
     }
 
 }

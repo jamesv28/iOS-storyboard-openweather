@@ -25,6 +25,7 @@
 		AA9BBF232F720AC600E1A789 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9BBF222F720AC600E1A789 /* Api.swift */; };
 		AA9BBF252F720D6D00E1A789 /* CurrentWeather.json in Resources */ = {isa = PBXBuildFile; fileRef = AA9BBF242F720D6100E1A789 /* CurrentWeather.json */; };
 		AAB1E17F2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1E17E2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift */; };
+		AAE528AB2F7E1BD400EF109E /* WeatherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE528AA2F7E1BD400EF109E /* WeatherType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		AA9BBF222F720AC600E1A789 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		AA9BBF242F720D6100E1A789 /* CurrentWeather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CurrentWeather.json; sourceTree = "<group>"; };
 		AAB1E17E2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyForecastDetailRow.swift; sourceTree = "<group>"; };
+		AAE528AA2F7E1BD400EF109E /* WeatherType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				AA9BBF202F71FBB100E1A789 /* CurrentWeather.swift */,
 				AA38334A2F74DF4900827C6A /* WeeklyForecast.swift */,
 				AA4A74152F7B3DC0008A5C1C /* DailyForecast.swift */,
+				AAE528AA2F7E1BD400EF109E /* WeatherType.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				AA848A9E2F69C55A00645C64 /* HomeTableTopRow.swift in Sources */,
 				AA848AA02F69C58900645C64 /* HomeTableCarousel.swift in Sources */,
+				AAE528AB2F7E1BD400EF109E /* WeatherType.swift in Sources */,
 				AA9444202F6CC1A800FED36C /* DailyCollectionCell.swift in Sources */,
 				AAB1E17F2F6E0F7F00EDBDFB /* WeeklyForecastDetailRow.swift in Sources */,
 				AA9BBF212F71FBB100E1A789 /* CurrentWeather.swift in Sources */,

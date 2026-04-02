@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeWeeklyForecastRow: UITableViewCell {
-
+    
     static let id = "HomeWeeklyForecastRow"
     private var dailyForecast: [DailyForecast] = []
     
@@ -18,10 +18,10 @@ class HomeWeeklyForecastRow: UITableViewCell {
         super.awakeFromNib()
         setupTableView()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
     }
     
     private func setupTableView() {
