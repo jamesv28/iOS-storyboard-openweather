@@ -42,7 +42,11 @@ class HomeVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
-        
+    
+    
+    @IBAction func didTapListButton(_ sender: UIBarButtonItem) {
+    }
+    
 }
 
 // this is for controlling the height of the three different table view cells

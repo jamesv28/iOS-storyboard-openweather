@@ -21,7 +21,7 @@ class DailyCollectionCell: UICollectionViewCell {
         } else {
             img.image = nil
         }
-        timeLabel.text = forecast.dt_txt
+        timeLabel.text = forecast.dt?.toHour()
         tempLabel.text = "\(forecast.main?.temp ?? 0)°"
     }
     

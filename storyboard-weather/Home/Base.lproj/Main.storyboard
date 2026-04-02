@@ -184,7 +184,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDP-bW-fEq">
                                                                         <rect key="frame" x="22" y="20.666666666666668" width="50" height="21.000000000000004"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" constant="50" id="u1c-kd-WPe"/>
+                                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="u1c-kd-WPe"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
@@ -264,7 +264,13 @@
                             <constraint firstItem="qAc-LE-Jqc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zvo-sd-cuJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="E0o-Vm-149"/>
+                    <navigationItem key="navigationItem" id="E0o-Vm-149">
+                        <barButtonItem key="rightBarButtonItem" image="line.3.horizontal" catalog="system" id="ojK-DI-tNH">
+                            <connections>
+                                <action selector="didTapListButton:" destination="BYZ-38-t0r" id="2x0-Ly-2FW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="qAc-LE-Jqc" id="Wet-ng-WrH"/>
                     </connections>
@@ -294,10 +300,11 @@
     </scenes>
     <resources>
         <image name="cloud.fill" catalog="system" width="128" height="87"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
         <image name="sun.max.circle" catalog="system" width="128" height="123"/>
         <image name="sun.max.fill" catalog="system" width="128" height="125"/>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
